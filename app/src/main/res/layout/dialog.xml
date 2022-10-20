@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#e0e0e0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FarmSettings">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="온도"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"/>
+    <SeekBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:max="40"
+        android:min="0"
+        android:progress="20"/>
+    <TextView
+        android:id="@+id/temperatureprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:text="습도"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"/>
+    <SeekBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:max="140"
+        android:min="0"
+        android:progress="65"/>
+    <TextView
+        android:id="@+id/humidityprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="65"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="배급횟수"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:id="@+id/radio"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:id="@+id/radio1"
+            android:text="3"
+            android:buttonTint="@color/black"
+            android:textColor="@color/black"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:id="@+id/radio2"
+            android:text="2"
+            android:buttonTint="@color/black"
+            android:textColor="@color/black"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/radio3"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="1"
+            android:buttonTint="@color/black"
+            android:textColor="@color/black"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/buttonid_send"
+        android:text="재출"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
